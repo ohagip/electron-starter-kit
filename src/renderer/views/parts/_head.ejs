@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title><% if(page.title) { %><%- page.title %><% } else { %><%- site.title %><% } %></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="<%- CSS_PATH %>app.css">
+<%_ if (Array.isArray(page.styles)) { _%>
+  <%_ page.styles.forEach(function(style) { _%>
+<link rel="stylesheet" href="<%- CSS_PATH %><%- style %>.css">
+  <%_ }) _%>
+<%_ } _%>
+</head>
+<%_
+var bodyClass = [];
+if (page.id) { bodyClass.push('page-' + page.id); }
+if (Array.isArray(page.bodyClass)) { bodyClass = bodyClass.concat(page.bodyClass); }
+bodyClass = bodyClass.join(' ');
+_%>
+<body class="<%- bodyClass %>">
+<div class="l-wrap">
+
+<%- include('./_header') %>
+
+<div class="l-main">

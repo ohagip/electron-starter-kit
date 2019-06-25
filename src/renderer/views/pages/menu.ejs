@@ -1,0 +1,16 @@
+<%- include('../_config') _%>
+<%
+// ページ個別設定
+page = {};
+page.id = 'menu';
+
+page.bodyClass = [];
+page.styles = [];
+page.scripts = [(JS_PATH + page.id + '.js')];
+page.imagesPath =  IMAGES_PATH + page.id + '/';
+_%>
+<%- include('../parts/_head'); %>
+
+<p style="text-align: center;">menu</p>
+
+<%- include('../parts/_foot'); %>

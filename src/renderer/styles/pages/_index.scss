@@ -1,0 +1,16 @@
+/**
+ * index page
+ */
+
+.page-index {
+  $imgPath: $IMG_PATH + 'index/';
+
+  // --------------------
+  // Sample
+  // --------------------
+  .sample {
+    @include mq-pc { content: 'pc'; }
+    @include mq-tab { content: 'tab'; }
+    @include mq-sp { content: 'sp'; }
+  }
+}
