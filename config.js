@@ -41,6 +41,7 @@ const paths = {
       `${ROOT}/node_modules/jquery/dist/jquery.min.js`,
       `${ROOT}/node_modules/lodash/lodash.min.js`,
       `${ROOT}/node_modules/gsap/src/minified/TweenMax.min.js`,
+      `${ROOT}/src/renderer/scripts/libs/_preload.js`,
     ],
   },
   image: {
