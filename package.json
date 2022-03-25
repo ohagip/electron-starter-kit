@@ -21,7 +21,7 @@
     "del": "^3.0.0",
     "delete-empty": "^2.0.0",
     "ejs": "^2.6.1",
-    "electron": "^5.0.5",
+    "electron": "^13.6.6",
     "electron-connect": "^0.6.3",
     "electron-packager": "^14.0.0",
     "electron-store": "^4.0.0",
